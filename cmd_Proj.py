@@ -34,18 +34,18 @@ def mdirfunc(name_):
 
 helpFunc()
 while True:
-    command_ = input(os.getcwd() + '>')
+    command_ = input(os.getcwd() + '>>')
     if command_ == 'cls':
         clsfunc()
     if command_ == 'dir':
         dirfunc()
     if command_ == 'cd':
-        path_ = input ('Input you PATH:>')
+        path_ = input ('Input you PATH:>>')
         chdirfunc(path_)
     if command_ == 'cd/':
         cdbackfunc()
     if command_ == 'mdir':
-        name_ = input ('Input your Directory Name:>')
+        name_ = input ('Input your Directory Name:>>')
         mdirfunc(name_)
     if command_ == 'quit':
         print('THANK YOU FOR CHOICE US')
