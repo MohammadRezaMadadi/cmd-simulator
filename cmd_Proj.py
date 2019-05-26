@@ -1,5 +1,5 @@
 import os
-
+# print help & command on screen
 def helpFunc():
     os.system('cls')
     print('-_'*15 + 'Help' + '_-'*15)
@@ -13,25 +13,30 @@ def helpFunc():
     print('For Exit the Program = quit')
     print('-_'*40)
     print()
-
+    
+# for clear screen 
 def clsfunc():
     os.system('cls')
     helpFunc()
 
+# for show list of directory
 def dirfunc():
     for items in os.listdir():
         print(items)
 
+# for change directory        
 def chdirfunc(path_):
     os.chdir(path_)
-    #print(os.getcwd())
 
+# for come back from directory    
 def cdbackfunc():
     os.chdir('../')
 
+# for make a new directory   
 def mdirfunc(name_):
     os.mkdir(name_)
 
+# main of program    
 helpFunc()
 while True:
     command_ = input(os.getcwd() + '>>')
